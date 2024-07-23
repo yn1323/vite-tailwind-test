@@ -1,13 +1,8 @@
 import "./App.css";
-import { Header } from "./components/Header";
+import { RoleRouter } from "./routes";
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Header />
-    </>
-  );
+  return <RoleRouter />;
 }
 
 export default App;
