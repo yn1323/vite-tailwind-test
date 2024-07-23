@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { generatePath, Link } from "react-router-dom";
+import { paths } from "../routes";
 
 type Props = {
   role?: string;
@@ -9,12 +10,12 @@ export const About = ({ role }: Props) => {
     <main>
       <h1>about: {role}</h1>
       <div>
-        <Link to="/">home</Link>
+        <Link to={generatePath(paths.home)}>home</Link>
       </div>
       <div>
-        <Link to="/contact">contact</Link>
+        <Link to={generatePath(paths.contact)}>contact</Link>
       </div>
-      <Link to="unknown">unknown</Link>
+      <Link to={generatePath("aaaa")}>unknown</Link>
     </main>
   );
 };
