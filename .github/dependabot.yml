@@ -15,12 +15,16 @@ updates:
       - "dependabot"
     groups:
       storybook:
-        - "@storybook*"
-        - "storybook*"
+        patterns:
+          - "@storybook*"
+          - "storybook*"
       react:
-        - "react*"
+        patterns:
+          - "react*"
       eslint:
-        - "eslint*"
-        - "@typescript-eslint*"
+        patterns:
+          - "eslint*"
+          - "@typescript-eslint*"
       vite:
-        - "vite*"
+        patterns:
+          - "vite*"
